@@ -2,6 +2,10 @@
 
 ただ走る白いマネキンを、ドラッグで左右に動かして箱と奈落を避けるスマホ向けブラウザゲーム。
 
+[▶ ブラウザで遊ぶ](https://goukikatagiri.github.io/Simple-Run/)
+
+インストール・ログイン不要。スマホでリンクを開き、再生ボタンを押すと始まります。
+
 ## ローカル起動
 
 Node.js 22以降。
@@ -40,3 +44,7 @@ Three.jsの[公式ドキュメント](https://threejs.org/docs/pages/WebGLRender
 ## 演出とリズム
 
 `src/sound.js` に回避・記録・失敗時の短い音、`src/runner.js` に残像を追加。400m以降に短い配置セット、900m以降に4配置の難所と直後の1.3〜1.6秒の到達間隔を追加します。難所は最低20秒空けて再登場します。自己ベスト地点は、床に細い線として表示します。
+
+## 公開
+
+GitHub Pagesで公開しています。`main` へのpushで `.github/workflows/pages.yml` がテスト・ビルドを実行し、成功した場合にだけ `dist/` を公開します。共有URLは https://goukikatagiri.github.io/Simple-Run/ です。
